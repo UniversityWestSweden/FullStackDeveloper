@@ -23,3 +23,4 @@ function pow(x, n) {
   }
   
   console.log( pow(2, 3) ); // 8
+  
