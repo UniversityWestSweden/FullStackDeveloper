@@ -9,6 +9,8 @@ const obj = {
   obj.f('Test from object')
 
 const ff = (m) => () => console.log(m);
+
+
 const f2 = (f3) => f3();
 f2(ff('Test as argument'));
 
