@@ -3,9 +3,11 @@ function fib_r(n) {
       return n;
     }
    
-    return fibr(n - 1) + fibr(n - 2);
+    return fib_r(n - 1) + fib_r(n - 2);
   }
-Console.log("Fibonacci with recursion:" + fib_r(4));
+console.log("Fibonacci with recursion:" + fib_r(4));
+
+
   function fib_i(n) {
     if (n < 2) {
       return n;
@@ -19,8 +21,9 @@ Console.log("Fibonacci with recursion:" + fib_r(4));
       ans = n0 + n1;
       n0 = n1;
       n1 = ans;
+      console.log(ans);
     }
    
     return ans;
   }
-  Console.log("Fibonacci with iteration:" +  fib_i(4));
+  console.log("Fibonacci with iteration:" +  fib_i(4));
