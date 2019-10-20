@@ -13,6 +13,9 @@ var person = {
         { "type": "fax", "number": "1234567" }
     ]
 }
+for (const key of Object.keys(person)) {
+    console.log(key, person[key]);
+}
 
 Object.keys(person).forEach(function(key) {
     console.log(key, person[key]);
