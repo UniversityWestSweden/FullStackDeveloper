@@ -10,9 +10,10 @@ var person = {
     },
     "phoneNumber": [
         { "type": "home", "number": "1234567" },
-        { "type": "fax", "number": "1234567" }
+        { "type": "fax", "number": "23423424234" }
     ]
 }
+/*
 for (const key of Object.keys(person)) {
     console.log(key, person[key]);
 }
@@ -20,9 +21,11 @@ for (const key of Object.keys(person)) {
 Object.keys(person).forEach(function(key) {
     console.log(key, person[key]);
 });
-
-console.log(person.address);
-var phonenumers = person.phoneNumber;
-console.log(phonenumers);
-console.log(phonenumers[0]);
-console.log(phonenumers[0].number);
+*/
+//let personAddress = person.address;
+//console.log(personAddress.streetAddress);
+let phonenumbers = person.phoneNumber;
+//console.log(phonenumbers);
+console.log(phonenumbers[0]);
+console.log(phonenumbers[0].number);
+console.log(person.phoneNumber[1].number);
